@@ -32,16 +32,16 @@ public class SimpleCalculator {
         System.out.println();
 
         System.out.print("Enter the 1st number of your choice: ");
-        double num1 = scanner.nextDouble();
+        double number1 = scanner.nextDouble();
 
         System.out.print("Enter the second number of your choice: ");
-        double num2 = scanner.nextDouble();
+        double number2 = scanner.nextDouble();
 
         System.out.println("Choose one operator you want to use : +, -, *, /");
         char operation = scanner.next().charAt(0);
 
         try {
-            double result = calculate(num1, num2, operation);
+            double result = calculate(number1, number2, operation);
             System.out.println("Answer: " + result);
         } catch (IllegalArgumentException e) {
             System.out.println("Error: " + e.getMessage());
