@@ -1,4 +1,4 @@
-NAme
+Name
 
 -My_Calculator_1
 

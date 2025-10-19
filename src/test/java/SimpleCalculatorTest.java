@@ -4,15 +4,30 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class SimpleCalculatorTest {
     @Test
-    void additionTest(){
+    void additionTest() {
         //Arrange (set up the objects and variables)
         SimpleCalculator calculator = new SimpleCalculator();
 
         //Act (peform the action being tested)
-        int actualResult = calculator.addition(2,5);
+        int actualResult = calculator.addition(2, 5);
 
         //Assert(verify the results is as expected)
         int expectedResult = 7;
         assertEquals(expectedResult, actualResult, "2 + 5 should equal 7");
     }
+
+    @Test
+    void subtractionTest() {
+        //Arrange (set up the objects and variables)
+        SimpleCalculator calculator = new SimpleCalculator();
+
+        //Act (perform the action being tested)
+        int actualResult = calculator.subtraction(5, 2);
+
+        //Assert(verify the results is as expected)
+        int expectedResult = 3;
+        assertEquals(expectedResult, actualResult, "5 - 2 should equal 3");
+    }
 }
+
+
