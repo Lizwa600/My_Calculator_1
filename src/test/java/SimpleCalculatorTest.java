@@ -1,9 +1,7 @@
 import org.junit.jupiter.api.Test;
 
-import java.lang.classfile.instruction.ExceptionCatch;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.fail;
+
 
 public class SimpleCalculatorTest {
     @Test
@@ -11,7 +9,7 @@ public class SimpleCalculatorTest {
         //Arrange (set up the objects and variables)
         SimpleCalculator calculator = new SimpleCalculator();
 
-        //Act (peform the action being tested)
+        //Act (perform the action being tested)
         int actualResult = calculator.addition(2, 5);
 
         //Assert(verify the results is as expected)
