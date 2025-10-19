@@ -28,6 +28,21 @@ public class SimpleCalculatorTest {
         int expectedResult = 3;
         assertEquals(expectedResult, actualResult, "5 - 2 should equal 3");
     }
+
+    @Test
+    void multiplicationTest() {
+
+        //Arrange (set up the objects and variables)
+        SimpleCalculator calculator = new SimpleCalculator();
+
+        //Act (perform the action being tested)
+        int actualResult = calculator.multiplication(5, 2);
+
+        //Assert(verify the results is as expected)
+        int expectedResult = 10;
+        assertEquals(expectedResult, actualResult, "5 * 2 should equal 10");
+    }
 }
+
 
 
