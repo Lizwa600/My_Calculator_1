@@ -1,20 +1,17 @@
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class SimpleCalculatorTest {
-
     @Test
-    void AddTwoNumbers() {
-        // Arrange
-        double number1 = 5;
-        double number2 = 3;
-        char operator = '+';
+    void additionTest(){
+        //Arrange
+        SimpleCalculator simpleCalculator = new SimpleCalculator();
 
-        // Act
-        double result = SimpleCalculator.calculate(number1, number2, operator);
+        //Act
+        int result = simpleCalculator.addition(2,5);
 
-        // Assert
-        assertEquals(8, result);
+        //Assert
+        assertEquals(7, result, "");
     }
 }
-
