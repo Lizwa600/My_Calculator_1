@@ -49,11 +49,11 @@ public class SimpleCalculatorTest {
         SimpleCalculator calculator = new SimpleCalculator();
 
         //Act (perform the action being tested)
-        double actualResult = calculator.division(5, 2);
+        int actualResult = calculator.division(5, 2);
 
 
         //Assert(verify the results is as expected)
-        double expectedResult =2.5;
+        int expectedResult =2;
         assertEquals(expectedResult, actualResult, "5 / 2 should equal 2.5");
 
     }
