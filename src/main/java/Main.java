@@ -20,7 +20,7 @@ public class Main {
         System.out.print("Enter second number: ");
         int number2 = scanner.nextInt();
         
-        int result = 0;
+        double result = 0.0;
         
         switch (choice) {
             case 1:
@@ -38,7 +38,7 @@ public class Main {
             case 4:
                 try {
                     result = calculator.division(number1, number2);
-                    System.out.println("Quotient: " + result);
+                    System.out.println(String.format("Quotient: %.2f", result));
                 } catch (ArithmeticException e) {
                     System.out.println("Error: " + e.getMessage());
                 }

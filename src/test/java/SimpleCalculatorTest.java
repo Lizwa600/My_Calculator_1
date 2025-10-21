@@ -1,6 +1,5 @@
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 
 public class SimpleCalculatorTest {
@@ -43,31 +42,28 @@ public class SimpleCalculatorTest {
         int expectedResult = 10;
         assertEquals(expectedResult, actualResult, "5 * 2 should equal 10");
     }
+
     @Test
-    void divisionTest(){
+    void divisionTest() {
         //Arrange (set up the objects and variables)
         SimpleCalculator calculator = new SimpleCalculator();
 
         //Act (perform the action being tested)
-        int actualResult = calculator.division(5, 2);
-
+        double actualResult = calculator.division(5, 2);
 
         //Assert(verify the results is as expected)
-        int expectedResult =2;
-        assertEquals(expectedResult, actualResult, "5 / 2 should equal 2.5");
-
+        double expectedResult = 2.5;
+        assertEquals(expectedResult, actualResult, 0.0001, "5 / 2 should equal 2.5");
     }
 
-//    @Test
-//    void divisionZeroTest() {
-//        // Arrange
-//        SimpleCalculator calculator = new SimpleCalculator();
-//
-//        // Act  (perform the action being tested)
-//        double actualResult = calculator.division(5, 0);
-//
-//        //Assert(verify the results is as expected)
-//        throw new ArithmeticException("Cannot divide by zero");
-//
-//    }
+    @Test
+    void divisionByZeroTest() {
+        // Arrange
+        SimpleCalculator calculator = new SimpleCalculator();
+
+        // Act & Assert
+        assertThrows(ArithmeticException.class, () -> {
+            calculator.division(5, 0);
+        }, "Should throw ArithmeticException when dividing by zero");
+    }
 }
