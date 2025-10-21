@@ -1,12 +1,16 @@
-Name
-
--My_Calculator_1
-
+My_Calculator_1
 Description
-- My_calculator_1 is a calculator project that I build using Java, initially I implemented with switch cases for arithmetic operator's but later changed to using methods for maintanability, reusability and testing purposes.
-- I'm practicing testing using Test Driven Development(TDD) with Junit following Arrange-Act-Assert(AAA) pattern. 
-- I have 4 methods, each of them perform it's unique function.
-- Addition adds two numbers and return a sum.
-- Subtraction subtract a second number from the first number and return a difference.
-- Multiplication multiplies two numbers and return a product.
-- Division divides a 1st number by a second number and return a Quotient, but does not allow a second number to be 0.
+
+My_Calculator_1 is a Java-based calculator project designed to perform basic arithmetic operations. Originally implemented using switch-case statements, the project was refactored to use individual methods for each operation to improve maintainability, reusability, and testability.
+This project practices Test Driven Development (TDD) using JUnit and follows the Arrange-Act-Assert (AAA) pattern for writing clean and effective tests.
+
+Features
+
+Addition: Adds two numbers and returns their sum.
+Subtraction: Subtracts the second number from the first and returns the difference.
+Multiplication: Multiplies two numbers and returns the product.
+Division: Divides the first number by the second and returns the quotient, ensuring that division by zero is not allowed.
+
+Testing
+
+This project is built with a focus on Test Driven Development (TDD). Unit tests for each method are written using JUnit and follow the Arrange-Act-Assert (AAA) pattern for clarity and structure.
